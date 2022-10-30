@@ -1,7 +1,7 @@
 # google-translate-for-goldendict
 Add Google translate for GoldenDict
 
-原github: https://github.com/xinebf/google-translate-for-goldendict。本项目在此基础上稍作更改，支持SOCKS5代理
+原github: https://github.com/xinebf/google-translate-for-goldendict 本项目在此基础上稍作更改，支持SOCKS5代理
 
 可以在[GoldenDict][1]中添加的 [Google translate][2]命令
 
