@@ -11,13 +11,11 @@ Add Google translate for GoldenDict
 
 ## **使用方法:**
 
-需要 python 3.7+:
-
-`git clone https://github.com/YexiongLin/google-translate-for-goldendict.git `
+需要 python 3.7+
 
 ### 安装使用
 
-`pip3 install ./google-translate-for-goldendict`
+`pip install git+https://github.com/YexiongLin/google-translate-for-goldendict`
 
 GoldenDict - 编辑 - 词典 - 字典来源 - 程序
 
@@ -49,7 +47,11 @@ optional arguments:
 
 ### 不安装使用
 
-如果不想安装，可以通过直接调用pure_translate_code中的程序，只需要把goldendict中的命令行改为
+如果不想安装，可以通过直接调用pure_translate_code中的程序，首先克隆下来：
+
+`git clone https://github.com/YexiongLin/google-translate-for-goldendict.git `
+
+再只需要把goldendict中的命令行改为
 
 ```
 python 你的保存路径/google-translate-for-goldendict/pure_translate_code/googletranslate.py zh_CN %GDWORD%
