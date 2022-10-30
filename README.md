@@ -1,7 +1,7 @@
 # google-translate-for-goldendict
 Add Google translate for GoldenDict
 
-原github: https://github.com/xinebf/google-translate-for-goldendict 本项目在此基础上稍作更改，支持SOCKS5代理
+原github: https://github.com/xinebf/google-translate-for-goldendict 本项目在此基础上稍作更改，支持SOCKS5代理，本地代理，默认端口是10808
 
 可以在[GoldenDict][1]中添加的 [Google translate][2]命令
 
@@ -9,11 +9,13 @@ Add Google translate for GoldenDict
 
 ![screenshot](./screenshot1.png)
 
-**使用方法:**
+## **使用方法:**
 
 需要 python 3.7+:
 
 `git clone https://github.com/YexiongLin/google-translate-for-goldendict.git `
+
+### 安装使用
 
 `pip3 install ./google-translate-for-goldendict`
 
@@ -43,6 +45,14 @@ optional arguments:
   -m              show synonyms
   -d              show definitions
   -e              show examples
+```
+
+### 不安装使用
+
+如果不想安装，可以通过直接调用pure_translate_code中的程序，只需要把goldendict中的命令行改为
+
+```
+python 你的保存路径/google-translate-for-goldendict/pure_translate_code/googletranslate.py zh_CN %GDWORD%
 ```
 
 [1]: https://github.com/goldendict/goldendict
