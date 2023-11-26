@@ -43,6 +43,7 @@ optional arguments:
   -m              show synonyms
   -d              show definitions
   -e              show examples
+  --proxy   whether use proxy
 ```
 
 ### 不安装使用

@@ -157,12 +157,14 @@ def get_args():
     parser.add_argument('-m', dest='synonyms', action='store_true', help='show synonyms')
     parser.add_argument('-d', dest='definitions', action='store_true', help='show definitions')
     parser.add_argument('-e', dest='examples', action='store_true', help='show examples')
+    parser.add_argument('--proxy', action='store_true', default=False, help='whether use proxy')
     return parser.parse_args()
 
 def main(args=None):
     args = args if args else get_args()
-    socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", args.port)
-    socket.socket = socks.socksocket
+    if args.proxy:
+        socks.set_default_proxy(socks.SOCKS5, "127.0.0.1", args.port)
+        socket.socket = socks.socksocket
     g_trans = GoogleTranslate(args)
     trans = asyncio.run(g_trans.get_translation(args.target, args.query, tkk=args.tkk))
     return trans
