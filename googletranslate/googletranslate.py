@@ -20,7 +20,8 @@ import argparse
 import socket
 import socks
 from .googletranslatetk import Token
-
+import warnings
+warnings.filterwarnings("ignore")
 
 class GoogleTranslate(object):
     def __init__(self, args):
